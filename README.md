@@ -23,7 +23,22 @@ Day 2: (JavaScript)Stacking HOF's and using the spread operator.
     ...: The spread operator. Essentially used to spread an array or data type across input. IE instead of doing something like Math.max(list[0], list[1], list[2], so on and so forth) you can do Math.max(...list). Much easier syntax.
     
     
-Day 3: (JavaScript)Creating a deeper understanding of object manipulation and taking full advantage of Reduce().
+Day 3: (JavaScript / Project)Stacking HOF's again. Using EVERY and SOME more specifically.
+
+
+    EVERY and SOME: This is a pretty powerful combination. You can end up with a function that essentially ensures there is at least one of what your looking for in a category and then checks thorugh all of those categorys to make sure that you have one of every category you need. 
+    
+    
+> How could you use this in development?
+
+
+    Take an example where you have two lists. Say one list is a set of colours and the other is a set of sports.   
+    You want the user to select at least one from each list.
+    A function coupling EVERY and SOME would only return true if the user has done exactly that by running every(some( // code )). 
+    The SOME function only returns true if there is at least one item selected in the list and the EVERY function only returns true if the SOME function returns true for both lists.
+    
+    
+Day 4: (JavaScript)Creating a deeper understanding of object manipulation and taking full advantage of Reduce().
 
 
 > Basic reduce examples:
