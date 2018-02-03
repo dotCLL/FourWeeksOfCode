@@ -43,4 +43,4 @@ function addUsername(list) {
   });
 }
 
-// My solution was on par if not better than the other alternate solutions provided after passing all tests.
+// My solution was on par if not better than the other alternate solutions provided after passing all tests and seeing all solutions.
