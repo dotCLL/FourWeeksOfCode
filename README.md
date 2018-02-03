@@ -21,3 +21,12 @@ Day 2: (JavaScript)Stacking HOF's and using the spread operator.
 
 
     ...: The spread operator. Essentially used to spread an array or data type across input. IE instead of doing something like Math.max(list[0], list[1], list[2], so on and so forth) you can do Math.max(...list). Much easier syntax.
+    
+    
+Day 3: (JavaScript)Creating a deeper understanding of object manipulation and taking full advantage of Reduce().
+
+
+> Basic reduce examples:
+
+
+![alt text](https://raw.githubusercontent.com/CLLDesigns/FourWeeksOfCode/master/Resources/ReduceExample.jpg)
