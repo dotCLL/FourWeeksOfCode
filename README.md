@@ -44,7 +44,7 @@ I've set myself a challenge to code for at least half an hour every day for four
 > Basic reduce examples:
 
 
-![alt text](https://raw.githubusercontent.com/CLLDesigns/FourWeeksOfCode/master/Resources/ReduceExample.jpg)
+![Example of how javascript's reduce function works](https://raw.githubusercontent.com/CLLDesigns/FourWeeksOfCode/master/Resources/ReduceExample.jpg)
 
 
 ## Day 5: Overthinking, back to basics and yes more HOF's.
@@ -54,3 +54,17 @@ I've set myself a challenge to code for at least half an hour every day for four
 
 
 > Don't overthink it. Take a step back, analyse and then attack it again.
+
+
+## Day 6: Putting it to work to create a Photoshop script.
+
+
+> Photoshop can take scripts to automate otherwise menial tasks.
+  I needed a set of images that had the same foreground but a differing background for an array of colours.
+  Using Photoshop to load the JavaScript file I could then export all of the pictures I needed
+  ready to go for http://brushandbristle.com.au
+  
+  
+    Annoyingly Photoshop doesn't seem to like ES6 notation so I couldn't use as much of what
+    I've learned so far. It's still great to use coding to really help solve a problem
+    and save a lot of my own time either way.
