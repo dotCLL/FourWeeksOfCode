@@ -47,7 +47,7 @@ I've set myself a challenge to code for at least half an hour every day for four
 ![Example of how javascript's reduce function works](https://raw.githubusercontent.com/CLLDesigns/FourWeeksOfCode/master/Resources/ReduceExample.jpg)
 
 
-## Day 5: Overthinking, back to basics and yes more HOF's.
+## Day 5: (JavaScript)Overthinking, back to basics and yes more HOF's.
 
 
     In the time I had for today I completed two challenges. Coding to solve a problem is almost always down to how you attack the problem. Today I should have finished four of the challenges but they seemed too easy so I started to over think them and kept pushing down paths using the arsenal of HOF's that I've been learning when the solutions ended up being dead simple and essentially as logical as possible. 
@@ -56,7 +56,7 @@ I've set myself a challenge to code for at least half an hour every day for four
 > Don't overthink it. Take a step back, analyse and then attack it again.
 
 
-## Day 6: Putting it to work to create a Photoshop script.
+## Day 6: (JavaScript)Putting it to work to create a Photoshop script.
 
 
 > Photoshop can take scripts to automate otherwise menial tasks.
@@ -68,3 +68,25 @@ I've set myself a challenge to code for at least half an hour every day for four
     Annoyingly Photoshop doesn't seem to like ES6 notation so I couldn't use as much of what
     I've learned so far. It's still great to use coding to really help solve a problem
     and save a lot of my own time either way.
+    
+    
+## Day 7: Sprint to the final challenge. Understanding .sort()
+
+
+    The last set of challenges enhanced my confidence in using reduce, filter and just generally 
+    understanding more about the syntax used to manipulate objects.
+    The final challenge was by far the toughest.
+    I was already feeling quite confident with using sort as it's quite similar to how other 
+    languages employ a standard sorting algorithm. The tricky part came when I hit sorts within
+    sorts. That's where I learned about localeCompare.
+    
+    
+> Basic localeCompare. 
+    
+    
+    Syntax: referenceString.localeCompare(compareString)
+    referenceString = compareString returns 0
+    referenceString < compareString returns negative number
+    referenceString > compareString returns positive number
+
+
