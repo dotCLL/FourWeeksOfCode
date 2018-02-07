@@ -90,3 +90,16 @@ I've set myself a challenge to code for at least half an hour every day for four
     referenceString > compareString returns positive number
 
 
+## Day 8: (React/Redux) controlled fields, middleware and this.
+
+
+    So that I can be completely prepared for my upcoming project I decided to delve into a 
+    smaller project to understand the finer details of using Redux with React.
+    
+    Controlled fields: A controlled field is a form element where the value of the input is 
+    dictated by the state of the component and not the other way around.
+    
+    Middleware: simply functions where actions pass through them before hitting the reducer.
+    
+    Binding 'this': Take the existing function, bind said function to 'this' and then replace the
+    existing function with the now bound to 'this' version of that same function.
