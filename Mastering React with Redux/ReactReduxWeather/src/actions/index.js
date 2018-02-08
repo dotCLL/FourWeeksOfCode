@@ -10,7 +10,7 @@ export function fetchWeather(city) {
   const url = `${ROOT_URL}&q=${city},au`;
   const request = axios.get(url);
 
-  // Action.
+  // Action. 
   // Payload: optional poroperty that goes along with actions that can contain
   // some additional data that can describes this particular action.
   return {

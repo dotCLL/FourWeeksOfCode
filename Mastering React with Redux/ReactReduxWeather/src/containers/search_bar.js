@@ -9,7 +9,7 @@ import { fetchWeather } from '../actions/index';
 // Using connect means that we don't export default the class any more.
 // The only place components are supposed to get thier information from is their props.
 // Hence why the container uses its mapXToProps functions with redux so that the component
-// can just worry about rendering and how to handle events.
+// can just worry about rendering and how to handle events. 
 class SearchBar extends Component {
   constructor(props) {
     super(props);

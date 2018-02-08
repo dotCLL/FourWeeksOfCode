@@ -1,6 +1,6 @@
 // Container vs component.
 // Container uses Redux state.
-// Component does not.
+// Component does not. 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
