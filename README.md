@@ -103,3 +103,26 @@ I've set myself a challenge to code for at least half an hour every day for four
     
     Binding 'this': Take the existing function, bind said function to 'this' and then replace the
     existing function with the now bound to 'this' version of that same function.
+    
+    
+## Day 9: (React/Redux) State manipulation, promises and the exclusion of components from overall state.
+    
+    
+    A great library to use is redux-promise. Then you can use JavaScript as you would asynchronously but
+    with also having pauses in checking of data until the data is there like a true promise as you could
+    use from other langauges. Check it out on npm.
+    
+    The only place components are supposed to get their information from is their props.
+    Hence why the container uses its mapXToProps functions with Redux so that the component can just worry
+    about rendering and how to handle events.
+    
+    Never change state directly. Always create a new version of state and overwrite the previous state. Redux is
+    smart enough to know that when you call setState() there are parts that have changed and parts that haven't
+    so let it do the work for efficiency first of all. Second of all it's much more predicatable and reliable.
+    Reducers in Redux are pure functions("A pure function is a function where the return value is only determined 
+    by its input values, without observable side effects"). By manipulating your application state directly you're
+    taking away the purity of your Reducers leaving yourself open for bugs that are much harder to track down.
+    
+    
+A quote from Dan Abramov(Co-author of Redux) regarding the why behind state manipulation.
+> "...state is not deeply cloned on every action. Only the parts that changed are cloned (again, not deeply—depends on what changed). For example, when a todo is edited in TodoMVC app, only that todo object is cloned. The rest of the todo objects are the same. Of course, a root new todo list array is created, pointing to the new object, but the objects themselves are not cloned if they have not changed. Therefore it's not as expensive as it may seem. Furthermore, when it gets expensive (e.g. fast array changes), you can start using a library like Immutable.js that has very fast copying thanks to structural sharing. With Immutable.js, copying even large arrays isn't really that expensive because large chunks of the memory are reused. Finally, whether with or without Immutable.js, immutability helps us efficiently rerender the app because we know what exactly has changed thanks to the objects not being mutated."
