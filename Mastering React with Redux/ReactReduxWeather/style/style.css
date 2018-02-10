@@ -1,8 +1,11 @@
 .container {
-  top: 50%;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 75%;
-  
+
+}
+
+.searched {
+  transform: translateY(20px) !important;
+}
+
+.searched-data {
+  transform: translateY(80px) !important;
 }
