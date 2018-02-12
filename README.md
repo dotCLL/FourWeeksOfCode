@@ -126,3 +126,11 @@ I've set myself a challenge to code for at least half an hour every day for four
     
 A quote from Dan Abramov(Co-author of Redux) regarding the why behind state manipulation.
 > "...state is not deeply cloned on every action. Only the parts that changed are cloned (again, not deeply—depends on what changed). For example, when a todo is edited in TodoMVC app, only that todo object is cloned. The rest of the todo objects are the same. Of course, a root new todo list array is created, pointing to the new object, but the objects themselves are not cloned if they have not changed. Therefore it's not as expensive as it may seem. Furthermore, when it gets expensive (e.g. fast array changes), you can start using a library like Immutable.js that has very fast copying thanks to structural sharing. With Immutable.js, copying even large arrays isn't really that expensive because large chunks of the memory are reused. Finally, whether with or without Immutable.js, immutability helps us efficiently rerender the app because we know what exactly has changed thanks to the objects not being mutated."
+
+## Day 10 / 11: (Redux) Custom Redux Actions
+
+
+![Why Redux is awesome.](https://raw.githubusercontent.com/CLLDesigns/FourWeeksOfCode/master/Resources/Redux.jpg)    
+
+    I can see just how powerful Redux can be and I think that this picture really shows how and why it should be 
+    used in any system that requires a lot of component-component state changes.
