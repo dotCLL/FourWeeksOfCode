@@ -136,7 +136,7 @@ A quote from Dan Abramov(Co-author of Redux) regarding the why behind state mani
     used in any system that requires a lot of component-component state changes.
     
     
-## Day 12: Modifying CSS with state.
+## Day 12: (React/Redux) Modifying CSS with state.
 
 
     Adding on to what I discovered from the past two days, using Redux to move state around is super beneficial, even
@@ -145,3 +145,57 @@ A quote from Dan Abramov(Co-author of Redux) regarding the why behind state mani
     a state through to the components required to have their styles modified to then know when to change. Powerful.
 
 ![ReactReduxWeather w/ graphs](https://raw.githubusercontent.com/CLLDesigns/FourWeeksOfCode/master/Resources/withGraphs.jpg) 
+
+
+## Day 13: (React/Redux) Redux, Middlewares, Reusable componentry and another project finished.
+
+
+    The mini live weather app is finished. It's looking pretty decent and has served it's purpose of teaching me
+    the basics of application level state changes using Redux with React. 
+    
+    Here are some of my key takeaways:
+    
+    **** ES6 Syntax ****
+    Instead of:
+        const lon = cityData.city.coord.lon;
+        const lat = cityData.city.coord.lat;
+    Do:
+        const { lon, lat } = cityData.city.coord;
+        
+    Instead of:
+        function mapStateToProps(state) {
+            return {
+                weather: state.weather
+            };
+        }
+    Do:
+        function mapStateToProps({ weather }) {
+            return { weather };
+        }
+
+    **** React ****
+    A controlled field is a form element where the value of the input is dictated by the state
+    of the component and not the other way around.
+    
+    Ref allows to get a reference to a html element that has been rendered to the page.
+        this.refs.map => direct reference to this html element.
+        
+    **** Redux ****
+    FLOW:
+        > A trigger of state change(user click, data load) results in calling an action creator.
+        > The action creator returns an action.
+        > The action is modified by any applicable middleware.
+        > The action is also then automatically sent to all reducers.
+        > All of the Reducers use that action to create their new state which will be all combined 
+        together to then notify the complete application and re-render any containers that require 
+        re-rendering.
+    
+    **** Packages ****
+    axios: creates shorthand AJAX requests.
+    
+    redux-promise: let us use promises when using packages like AXIOS to grab data using GET requests. 
+    Redux-promise helped me to cause my application to stop an action, wait for the promise to resolve and then
+    once resolved it set that data as the payload and passed on that data to all of the reducers in my 
+    application.
+    
+![ReactReduxWeather w/ maps](https://raw.githubusercontent.com/CLLDesigns/FourWeeksOfCode/master/Resources/withGMaps.jpg)
