@@ -9,3 +9,9 @@
 .searched-data {
   transform: translateY(80px) !important;
 }
+
+.dataTableRow td {
+  vertical-align: middle !important;
+  text-align: center !important;
+  width: 180px;
+}

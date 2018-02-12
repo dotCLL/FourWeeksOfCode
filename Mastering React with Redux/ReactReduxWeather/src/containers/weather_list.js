@@ -3,6 +3,7 @@
 // Component does not.
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Chart from '../components/chart'
 
 const dataTable = {
   transform: `translateY(${window.innerHeight}px)`,
@@ -13,26 +14,29 @@ const dataTable = {
 class WeatherList extends Component {
   renderWeather(cityData) {
     const name = cityData.city.name;
+    const temps = cityData.list.map(weather => weather.main.temp);
+    const press = cityData.list.map(weather => weather.main.pressure);
+    const humid = cityData.list.map(weather => weather.main.humidity);
+
     return (
-      <tr key="name">
+      <tr key={name} className="dataTableRow">
         <td>{name}</td>
-        <td>{cityData.list[0].main.temp} C</td>
-        <td>{cityData.list[0].main.pressure} hPa</td>
-        <td>{cityData.list[0].main.humidity} %</td>
+        <td><Chart data={temps} colour="orange" units="C" /></td>
+        <td><Chart data={press} colour="blue" units="hPa" /></td>
+        <td><Chart data={humid} colour="red" units="%" /></td>
       </tr>
     )
   }
 
   render() {
-    console.log(this.props.searched.length);
     return (
       <table className={(this.props.searched.length > 0) ? 'table table-hover searched-data' : 'table table-hover'} style={dataTable}>
         <thead>
           <tr>
             <th>City</th>
-            <th>Temperature</th>
-            <th>Pressure</th>
-            <th>Humidity</th>
+            <th>Temperature (C)</th>
+            <th>Pressure (hPa)</th>
+            <th>Humidity (%)</th>
           </tr>
         </thead>
         <tbody>
