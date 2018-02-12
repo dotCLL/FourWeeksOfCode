@@ -134,3 +134,14 @@ A quote from Dan Abramov(Co-author of Redux) regarding the why behind state mani
 
     I can see just how powerful Redux can be and I think that this picture really shows how and why it should be 
     used in any system that requires a lot of component-component state changes.
+    
+    
+## Day 12: Modifying CSS with state.
+
+
+    Adding on to what I discovered from the past two days, using Redux to move state around is super beneficial, even
+    for smaller applications like ReactReduxWeather. I wanted to make a transition where the search bar was situated 
+    in the middle of the users view and moved into position once they had decided to search. With Redux I could pass
+    a state through to the components required to have their styles modified to then know when to change. Powerful.
+
+![ReactReduxWeather w/ graphs](https://raw.githubusercontent.com/CLLDesigns/FourWeeksOfCode/master/Resources/withGraphs.jpg) 
