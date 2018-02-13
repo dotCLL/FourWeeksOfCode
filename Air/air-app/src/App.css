@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+#holder {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.air-logo {
+  animation: air-logo-glow infinite 3.5s linear;
+  height: 80px;
+}
+
+@keyframes air-logo-glow {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
