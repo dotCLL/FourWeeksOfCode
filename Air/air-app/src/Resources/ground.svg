@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="488px" height="1024px" viewBox="0 0 488 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>ground</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Lander" transform="translate(-952.000000, 0.000000)">
+            <g id="ground" transform="translate(952.000000, 0.000000)">
+                <rect id="Rectangle" fill="#B8E986" x="0" y="0" width="488" height="1024"></rect>
+                <path d="M0.195938248,682.522713 C0.195938248,682.522713 21.5897022,598.055972 120.97512,669.5299 C220.360538,741.003829 172.156532,834.064324 278.225007,882.469851 C317.947723,900.597753 279.283369,969.642826 250.067332,1003.64395 C220.851295,1037.64508 155.734513,1025.02219 155.734513,1025.02219 L2.99985822,1023.28455 L0.195938248,682.522713 Z" id="Path-4" fill="#A0E659"></path>
+                <path d="M488.696718,168.286423 C488.696718,168.286423 455.738534,121.671879 408.725761,148.757713 C361.712988,175.843547 283.321994,392.657629 282.871879,453.226562 C282.103587,556.610349 485.622937,581.90411 485.622937,581.90411 L488.696718,168.286423 Z" id="Path-5" fill="#A0E659"></path>
+            </g>
+        </g>
+    </g>
+</svg>
