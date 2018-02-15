@@ -236,3 +236,15 @@ with proper planning. Before I started coding up [Air](https://github.com/CLLDes
 
     So by passing the childs data to the components props I could then access that data to modify the scene.
     
+
+## Day 16: (Redux) StateToProps vs DispatchToProps.
+
+
+I spent most of my time with the layout of JSX and basic CSS but looked into more of the difference between Redux's functions, mapStateToProps and mapDispatchToProps and here is the best way I can outline the difference.
+
+
+    ...every time your state is changed, mapStateToProps will be called with your new state and subsequently
+    as your props update, your component will run its render function to re-render your component in the browser.
+    mapDispatchToProps however is more about having access to the store without a local variable. This means
+    that with this dispatcher referenced in the component(read container), you can call(dispatch) an action 
+    creator to effect changes to state.
