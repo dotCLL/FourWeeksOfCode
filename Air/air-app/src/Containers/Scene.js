@@ -26,7 +26,7 @@ export default class Scene extends Component {
   translateStyle(element) {
     switch (this.state.activeCont) {
       case null:
-        return (element === 'runway') ? '0px' : `-${this.state.runwayHeight}px`;
+        return (element === 'runway') ? '0px' : `-${this.state.runwayHeight + 50}px`;
       case 'FLIGHTS':
         return (element === 'runway') ? '0px' : `-${this.state.runwayHeight - (window.innerHeight / 5)}px`;
       case 'HOTELS':
