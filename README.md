@@ -248,3 +248,15 @@ I spent most of my time with the layout of JSX and basic CSS but looked into mor
     mapDispatchToProps however is more about having access to the store without a local variable. This means
     that with this dispatcher referenced in the component(read container), you can call(dispatch) an action 
     creator to effect changes to state.
+    
+    
+## Day 17: (React/Redux) StateToProps and DispatchToProps
+
+
+I dived deeper into utilising mapDispatchToProps today. Using connect from react-redux I set mapDispatchToProps to bind all of my action creators to my NavBar component. So now when a NavBarItem is clicked an onClick function is called to update the application state which causes the ProgressBar and Scene(Aircraft take-off) to re-render with the new updated state. 
+
+
+These two components re-render because both of these components are connected to Redux using the mapStateToProps function.
+
+
+![App and state](https://raw.githubusercontent.com/CLLDesigns/FourWeeksOfCode/master/Resources/Day17AirAppRedux.jpg)
