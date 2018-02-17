@@ -260,3 +260,12 @@ These two components re-render because both of these components are connected to
 
 
 ![App and state](https://raw.githubusercontent.com/CLLDesigns/FourWeeksOfCode/master/Resources/Day17AirAppRedux.jpg)
+
+
+## Day 18: (React/JavaScript) Dynamically generating custom components
+
+
+Using HOF's to make my codebase way more succinct. I have a set of JavaScript objects that hold the fixed content data for [Air](https://github.com/CLLDesigns/FourWeeksOfCode/tree/master/Air/air-app). My component will then only render the particular content slide that is required from the overall application state by mapping over the contentData and returning the applicable JSX.
+
+
+P.S. JSX is great.
