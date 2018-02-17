@@ -6,6 +6,7 @@
 html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
+  color: #4A4A4A;
 }
 
 #root {
@@ -51,6 +52,38 @@ html, body {
 
 #NavBar li:hover {
   opacity: 0.5;
+}
+
+#ContentHolder {
+  padding: 5vw;
+  flex: 1;
+}
+
+.content {
+  animation: 1s ease-out 0s 1 cont-load;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.content h1 {
+  color: #4A4A4A;
+  margin: 0;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.content h2 {
+  color: #92AFD7;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.content p {
+  color: #4A4A4A;
+  font-size: 1.2em;
 }
 
 #Progress {
@@ -104,4 +137,9 @@ html, body {
   0% { opacity: 0.5; }
   50% { opacity: 1; }
   100% { opacity: 0.5; }
+}
+
+@keyframes cont-load {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
