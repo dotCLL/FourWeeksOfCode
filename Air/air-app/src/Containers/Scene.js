@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import ground from '../Resources/ground.svg';
 import plane from '../Resources/plane.svg';
 import runway from '../Resources/runway.svg';
 
-export default class Scene extends Component {
+class Scene extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      activeCont: null,
       runwayHeight: null
     }
 
@@ -24,15 +24,15 @@ export default class Scene extends Component {
   };
 
   translateStyle(element) {
-    switch (this.state.activeCont) {
-      case null:
-        return (element === 'runway') ? '0px' : `-${this.state.runwayHeight + 50}px`;
-      case 'FLIGHTS':
+    switch (this.props.activeCont) {
+      case 'flights':
         return (element === 'runway') ? '0px' : `-${this.state.runwayHeight - (window.innerHeight / 5)}px`;
-      case 'HOTELS':
+      case 'hotels':
         return (element === 'runway') ? '0px' : `-${this.state.runwayHeight - (window.innerHeight / 2.5)}px`;
+      case 'chat':
+        return (element === 'runway') ? '0px' : `-${this.state.runwayHeight - (window.innerHeight / 1.75)}px`;
       default:
-        return (element === 'runway') ? '0px' : `-${this.state.runwayHeight}px`;
+        return (element === 'runway') ? '0px' : `-${this.state.runwayHeight  + 50}px`;
     }
   };
 
@@ -61,3 +61,11 @@ export default class Scene extends Component {
     )
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    activeCont: state.activeCont
+  };
+}
+
+export default connect(mapStateToProps)(Scene);

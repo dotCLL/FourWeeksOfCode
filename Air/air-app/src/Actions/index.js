@@ -1,9 +1,9 @@
 export const CONTENT = 'CONTENT';
 
-export function activeCont(active) {
+export function activeCont(payload) {
 
   return {
     type: CONTENT,
-    payload: active
+    payload: payload
   }
 }
