@@ -269,3 +269,8 @@ Using HOF's to make my codebase way more succinct. I have a set of JavaScript ob
 
 
 P.S. JSX is great.
+
+## Day X: Where is the rest?
+
+
+At day 18 of my FourWeeksOfCode challenge I was juggling full time university, part time work and won a tender a to do some development out in the industry which then took up all of my spare time for months. It was an amazing experience and my habits from FourWeeksOfCode became business as usual. From there I stopped pushing my learnings to GitHub and stopped posting on my social media. 
